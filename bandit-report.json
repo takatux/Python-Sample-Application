@@ -1,0 +1,142 @@
+{
+  "errors": [],
+  "generated_at": "2021-07-02T15:59:27Z",
+  "metrics": {
+    "./app.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 188,
+      "nosec": 0
+    },
+    "./setup.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 0.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 0.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 9,
+      "nosec": 0
+    },
+    "./test/test_endpoints.py": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 6.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 6.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 132,
+      "nosec": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0.0,
+      "CONFIDENCE.LOW": 0.0,
+      "CONFIDENCE.MEDIUM": 6.0,
+      "CONFIDENCE.UNDEFINED": 0.0,
+      "SEVERITY.HIGH": 0.0,
+      "SEVERITY.LOW": 6.0,
+      "SEVERITY.MEDIUM": 0.0,
+      "SEVERITY.UNDEFINED": 0.0,
+      "loc": 329,
+      "nosec": 0
+    }
+  },
+  "results": [
+    {
+      "code": "8 \n9 test_auth_token = 'MLth87eHvSAaCQ1vn7jTd0xA9Kapo5'\n10 \n11 \n12 class TestCases(unittest.TestCase):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'MLth87eHvSAaCQ1vn7jTd0xA9Kapo5'",
+      "line_number": 9,
+      "line_range": [
+        9,
+        10,
+        11
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    },
+    {
+      "code": "57             with client.session_transaction() as session:\n58                 session['access_token'] = 'NOT_A_CODE'\n59             with Betamax(self.session).use_cassette('products_failure'):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'NOT_A_CODE'",
+      "line_number": 58,
+      "line_range": [
+        58
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    },
+    {
+      "code": "82             with client.session_transaction() as session:\n83                 session['access_token'] = 'NOT_A_CODE'\n84             with Betamax(app.requests_session).use_cassette('time_estimates_failure'):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'NOT_A_CODE'",
+      "line_number": 83,
+      "line_range": [
+        83
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    },
+    {
+      "code": "107             with client.session_transaction() as session:\n108                 session['access_token'] = 'NOT_A_CODE'\n109             with Betamax(app.requests_session).use_cassette('price_estimates_failure'):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'NOT_A_CODE'",
+      "line_number": 108,
+      "line_range": [
+        108
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    },
+    {
+      "code": "132             with client.session_transaction() as session:\n133                 session['access_token'] = 'NOT_A_CODE'\n134             with Betamax(app.requests_session).use_cassette('history_failure'):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'NOT_A_CODE'",
+      "line_number": 133,
+      "line_range": [
+        133
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    },
+    {
+      "code": "157             with client.session_transaction() as session:\n158                 session['access_token'] = 'NOT_A_CODE'\n159             with Betamax(app.requests_session).use_cassette('me_failure'):\n",
+      "filename": "./test/test_endpoints.py",
+      "issue_confidence": "MEDIUM",
+      "issue_severity": "LOW",
+      "issue_text": "Possible hardcoded password: 'NOT_A_CODE'",
+      "line_number": 158,
+      "line_range": [
+        158
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/latest/plugins/b105_hardcoded_password_string.html",
+      "test_id": "B105",
+      "test_name": "hardcoded_password_string"
+    }
+  ]
+}
